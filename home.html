@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information - Results</title>
+    <link rel="stylesheet" href="home-style.css">
+</head>
+<body>
+    <header class="bg-color">
+        <div class="flex justify align-center padding">
+            <a href="index.html" class="text-color block margin">Home</a>
+            <a href="home.html" class="text-color block margin">Forecast</a>
+            <a href="map.html" class="text-color block margin">Map</a>
+            <a href="" class="text-color block margin">How</a>
+        </div>
+    </header>
+    <section style="top: -60px; width: 100%; object-fit: cover; position: fixed;">
+        <video loop="loop" autoplay="autoplay" playsinline="" muted="muted" class="w-full h-full object-cover" style="min-height: 550px;">
+            <source src="background.mp4">
+        </video>
+    </section>
+    <div style="position: relative; z-index: 10; color: aquamarine;">
+        <div class="card-container" style="left:150px">
+            <span class="card">
+                <div class="bg"></div>
+                <h1 class="text"><span id="locationName"></span></h1>
+                <h4 class="text"><span id="locationCoord">lon lat</span></h4>
+                <h4 class="text"><span id="localtime">Time</span></h4>
+            </span>   
+            <span class="card2">
+                <div class="bg2"></div>
+                <div class="temp-container">
+                    <img src="" id="temp-icon" class="tempicon">
+                    <div class="temp-values">
+                        <br>
+                        <h1 class="text" id="temp_c"> tempc</h1>
+                        <br>
+                        <h1 class="text" id="temp_f">tempf</h1>
+                    </div>
+                </div>
+                <h3 class="text condition" id="condition"> condition</h3>
+            </span>
+            
+            <span class="card3">
+                <div class="bg3"></div>
+                <div class="temp2-container">
+                    <div class="temp-item">
+                        <img src="sunrise.png" class="tempicon">
+                        <h4 class="text"><span id="sunrise">Sunrise:</span></h4>
+                    </div>
+                    <div class="temp-item">
+                        <img src="sunset.png" class="tempicon">
+                        <h4 class="text"><span id="sunset">Sunset:</span></h4>
+                    </div>
+                </div>
+            </span>
+            <span class="card4">
+                <div class="bg4"></div>
+                <h4 class="text"><span id="wind_kph">wind kph</span></h4>
+                <h4 class="text"><span id="wind_dir">wind dir</span></h4>
+                <h4 class="text"><span id="wind_degree">wind degree</span></h4>
+            </span>
+        </div>
+        <br><br>
+        <div class="card-container" style="left: 50px;">
+                        
+            <span class="card3">
+                <div class="bg3"></div>
+                <div class="temp2-container"><br>
+                    <div class="temp-item">
+                        <img src="moonrise.png" class="tempicon2">
+                        <h4 class="text"><span id="moonrise">Moonrise:</span></h4>
+                    </div><br>
+                    <div class="temp-item">
+                        <img src="moonset.png" class="tempicon2">
+                        <h4 class="text"><span id="moonset">Moonset:</span></h4>
+                    </div>
+                    <h4 class="text"><span id="moon_phase">Moon Phase:</span></h4>
+                </div>
+            </span>
+            <span class="card6">
+                <div class="bg6"></div>
+                <h4 class="text"><span id="pressure_mb">pressure mb</span></h4>
+                <h4 class="text"><span id="precip_mm">precip mm</span></h4>
+                <h4 class="text"><span id="vis_km"> vis km</span></h4>
+                <h4 class="text"><span id="gust_kph">gust kph</span></h4>
+            </span>
+            <span class="card7">
+                <div class="bg7"></div>
+                <h4 class="text"><span id="humidity"> humidity</span></h4>
+                <h4 class="text"><span id="cloud">cloud</span></h4>
+                <h4 class="text"><span id="uv">uv index</span></h4>
+            </span>
+            <span class="card8">
+                <div class="bg8"></div>
+                <h4 class="text"><span id="co">co</span></h4>
+                <h4 class="text"><span id="no2">no2</span></h4>
+                <h4 class="text"><span id="o3">o3</span></h4>
+                <h4 class="text"><span id="so2">so2</span></h4>
+            </span>
+        </div>
+    </div>
+    <script type="module" src="home-script.js"></script>
+</body>
+</html>

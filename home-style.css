@@ -1,0 +1,355 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bg-color {
+  background-color: #444444;
+}
+.text-color {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+.justify {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.padding {
+  padding: 20px;
+  z-index: 10;
+  position: relative;
+}
+.margin {
+  margin: auto;
+  padding: 20px;
+  cursor: pointer;
+}
+.card-container {
+  display:flex;
+  justify-content: left; /* Center the cards horizontally */
+  gap: 50px; /* Add space between the cards */
+  position: relative;
+  z-index: 10;
+}
+.card {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 30px #34829e, -10px -10px 30px #34829e;
+  transition: transform 0.3s ease;
+}
+.card2 {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 30px #34829e, -10px -10px 30px #34829e;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.bg2 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 290px;
+  height: 240px;
+  z-index: 2;
+  background: transparent;
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+
+.temp-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.temp2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (left) */
+  justify-content: center;
+  z-index: 10;
+}
+
+.tempicon {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px; /* Add space between the icon and the text */
+}
+
+.temp-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add space between the items */
+}
+
+.temp-values .text {
+  margin: 0; /* Remove any default margins */
+}
+.tempicon2 {
+  width: 60px;  /* Change this to the desired width */
+  height: 60px; /* Change this to the desired height */
+  margin-right: 10px;
+}
+.temp-values {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.temp-values .text {
+  margin: 5px 0;
+}
+
+.condition {
+  margin-top: 20px;
+  z-index: 10;
+}
+
+.card2:hover {
+  transform: scale(1.05);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 190px;
+  height: 240px;
+  z-index: 2;
+  background: transparent;
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+@keyframes blob-bounce {
+  0% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+  25% {
+      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+  50% {
+      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+  75% {
+      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+  100% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+.card3 {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 30px #34829e, -10px -10px 30px #34829e;
+  transition: transform 0.3s ease;
+}
+.card3:hover {
+  transform: scale(1.05);
+}
+.bg3 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 290px;
+  height: 240px;
+  z-index: 2;
+  background: transparent;
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+.card4 {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 30px #34829e, -10px -10px 30px #34829e;
+  transition: transform 0.3s ease;
+}
+.card4:hover {
+  transform: scale(1.05);
+}
+.bg4 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 290px;
+  height: 240px;
+  z-index: 2;
+  background: transparent;
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}.card5 {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 30px #34829e, -10px -10px 30px #34829e;
+  transition: transform 0.3s ease;
+}
+.card5:hover {
+  transform: scale(1.05);
+}
+.bg5 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 290px;
+  height: 240px;
+  z-index: 2;
+  background: transparent;
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+.card6 {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 30px #34829e, -10px -10px 30px #34829e;
+  transition: transform 0.3s ease;
+}
+.card6:hover {
+  transform: scale(1.05);
+}
+.bg6 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 290px;
+  height: 240px;
+  z-index: 2;
+  background: transparent;
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+.card7 {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 30px #34829e, -10px -10px 30px #34829e;
+  transition: transform 0.3s ease;
+}
+.card7:hover {
+  transform: scale(1.05);
+}
+.bg7 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 290px;
+  height: 240px;
+  z-index: 2;
+  background: transparent;
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+.card8 {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 30px #34829e, -10px -10px 30px #34829e;
+  transition: transform 0.3s ease;
+}
+.card8:hover {
+  transform: scale(1.05);
+}
+.bg8 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 290px;
+  height: 240px;
+  z-index: 2;
+  background: transparent;
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+.text{
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position: relative; z-index: 10;bottom: 5px; color: white;
+}
