@@ -1,137 +1,84 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"poppins",sans-serif;
-}
 body{
-    background-color: #c9d6ff;
-    background:linear-gradient(to right,#e2e2e2,#c9d6ff);
+    margin: 0;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
 }
+.bg-color{
+    background-color: #444444;
+}
+.text-color{
+    color: white;
+    font-family:'Lato',sans-serif;
+    text-decoration: none;
+}
+.block{
+    display: block;
+}
+.flex{
+    display: flex;
+}
+.justify{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.padding{
+    padding: 20px;
+    z-index: 10;
+    position: relative;
+}
+
+.margin{
+    margin: auto;
+    padding: 20px;
+    cursor: pointer;
+}
+
 .container{
-    background:#fff;
-    width:450px;
-    padding:1.5rem;
-    margin:50px auto;
-    border-radius:10px;
-    box-shadow:0 20px 35px rgba(0,0,1,0.9);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-form{
-    margin:0 2rem;
+.container .button{
+    position: relative;
+    height: 50px;
 }
-.form-title{
-    font-size:1.5rem;
-    font-weight:bold;
-    text-align:center;
-    padding:1.3rem;
-    margin-bottom:0.4rem;
+.container .button input{
+    background-color: aliceblue;
+    border-radius: 23px;
+    font-size: 18px;
+    font-family:'Lato',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    padding: 10px;
+    border: #444444 solid;
+    padding-left: 30px;
+    color: #444444;
+    height: 50%;
+    width: 450px;
+    outline: none;
 }
-input{
-    color:inherit;
-    width:100%;
-    background-color:transparent;
+.container .button button{
+    background-color: rgb(147, 202, 234);
+    border-radius: 20px;
+    font-size: 18px;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
     border:none;
-    border-bottom:1px solid #757575;
-    padding-left:1.5rem;
-    font-size:15px;
-}
-.input-group{
-    padding:1% 0;
-    position:relative;
+    font-family:'Lato',sans-serif;
+    padding: 9px;
+    color: #444444;
+    position: absolute;
+    top:50%;
+    right:-11%;
+    transform: translate(-50%,-50%);
 
-}
-.input-group i{
-    position:absolute;
-    color:black;
-}
-input:focus{
-    background-color: transparent;
-    outline:transparent;
-    border-bottom:2px solid hsl(327,90%,28%);
-}
-input::placeholder{
-    color:transparent;
-}
-label{
-    color:#757575;
-    position:relative;
-    left:1.2em;
-    top:-1.3em;
-    cursor:auto;
-    transition:0.3s ease all;
-}
-input:focus~label,input:not(:placeholder-shown)~label{
-    top:-3em;
-    color:hsl(327,90%,28%);
-    font-size:15px;
-}
-.recover{
-    text-align:right;
-    font-size:1rem;
-    margin-bottom:1rem;
-
-}
-.recover a{
-    text-decoration:none;
-    color:rgb(125,125,235);
-}
-.recover a:hover{
-    color:blue;
-    text-decoration:underline;
-}
-.btn{
-    font-size:1.1rem;
-    padding:8px 0;
-    border-radius:5px;
-    outline:none;
-    border:none;
-    width:100%;
-    background:rgb(125,125,235);
-    color:white;
-    cursor:pointer;
-    transition:0.9s;
-}
-.btn:hover{
-    background:#07001f;
-}
-.or{
-    font-size:1.1rem;
-    margin-top:0.5rem;
-    text-align:center;
-}
-.icons{
-    text-align:center;
-}
-.icons i{
-    color:rgb(125,125,235);
-    padding:0.8rem 1.5rem;
-    border-radius:10px;
-    font-size:1.5rem;
-    cursor:pointer;
-    border:2px solid #dfe9f5;
-    margin:0 15px;
-    transition:1s;
-}
-.icons i:hover{
-    background:#07001f;
-    font-size:1.6rem;
-    border:2px solid rgb(125,125,235);
-}
-.links{
-    display:flex;
-    justify-content:space-around;
-    padding:0 4rem;
-    margin-top:0.9rem;
-    font-weight:bold;
-}
-button{
-    color:rgb(125,125,235);
-    border:none;
-    background-color:transparent;
-    font-size:1rem;
-    font-weight:bold;
-}
-button:hover{
-    text-decoration:underline;
-    color:blue;
+    
 }

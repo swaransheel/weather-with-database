@@ -3,6 +3,7 @@ session_start();
 include("connect.php");
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +15,9 @@ include("connect.php");
 <body>
     <header class="bg-color">
         <div class="flex justify align-center padding">
-            <a href="index.html" class="text-color block margin">Home</a>
+            <a href="homepage.php" class="text-color block margin">Home</a>
             <a href="map.html" class="text-color block margin">Map</a>
+            <a href="logout.php" class="text-color block margin">Logout</a>
         </div>
     </header>
     <section style="top: -60px; width: 100%; object-fit: cover; position: fixed;">

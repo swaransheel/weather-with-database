@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Information</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-         iframe {
-            width: 100%;
-            height: 100vh;
-            border: none; 
-        }
-    </style>
 </head>
 <body>
     <header class="bg-color">
@@ -26,8 +20,24 @@
             <source src="background.mp4">
         </video>
     </section>
-    <iframe id="mapIframe" style="z-index: 10; position: relative;" width="500" height="300" src=""></iframe>   
-     <script src="map-script.js"></script>
+    <div>
+        <form id="locationForm" action="home.html" method="GET">
+            <div class="container">
+                <div class="button">
+                    <input type="text" id="locationInput" name="location" placeholder="e.g., London">
+                    <button type="submit" id="search-btn">Get Weather</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="weatherInfo"></div>
+    <script>
+        const form=document.getElementById("locationForm");
+        const loc=document.getElementById("locationInput");
+        form.addEventListener("submit",function(e){
+            const locvalue=locationInput.value;
+            localStorage.setItem("loc-val",locvalue);
+        })
+    </script>
 </body>
 </html>
-

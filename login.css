@@ -5,11 +5,11 @@
     font-family:"poppins",sans-serif;
 }
 body{
-    background-color: #212121;
+    background-color: #c9d6ff;
     background:linear-gradient(to right,#e2e2e2,#c9d6ff);
 }
 .container{
-    background:#171717;
+    background:#fff;
     width:450px;
     padding:1.5rem;
     margin:50px auto;
@@ -31,7 +31,7 @@ input{
     width:100%;
     background-color:transparent;
     border:none;
-    border-bottom:1px solid #6d5656;
+    border-bottom:1px solid #757575;
     padding-left:1.5rem;
     font-size:15px;
 }
@@ -42,12 +42,12 @@ input{
 }
 .input-group i{
     position:absolute;
-    color:rgb(244, 239, 239);
+    color:black;
 }
 input:focus{
     background-color: transparent;
     outline:transparent;
-    border-bottom:2px solid hsl(326, 32%, 47%);
+    border-bottom:2px solid hsl(327,90%,28%);
 }
 input::placeholder{
     color:transparent;
@@ -76,7 +76,7 @@ input:focus~label,input:not(:placeholder-shown)~label{
     color:rgb(125,125,235);
 }
 .recover a:hover{
-    color:rgb(222, 56, 92);
+    color:blue;
     text-decoration:underline;
 }
 .btn{
