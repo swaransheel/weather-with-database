@@ -4,10 +4,10 @@ body{
     -moz-osx-font-smoothing:grayscale;
 }
 .bg-color{
-    background-color: #caa5a5;
+    background-color: #dc9b9b;
 }
 .text-color{
-    color: white;
+    color: rgb(7, 6, 6);
     font-family:'Lato',sans-serif;
     text-decoration: none;
 }
@@ -51,16 +51,16 @@ body{
     height: 50px;
 }
 .container .button input{
-    background-color: aliceblue;
+    background-color: rgb(139, 170, 197);
     border-radius: 23px;
     font-size: 18px;
     font-family:'Lato',sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     padding: 10px;
-    border: #444444 solid;
+    border: #ffcaca solid;
     padding-left: 30px;
-    color: #a15d5d;
+    color: #ffffff;
     height: 50%;
     width: 450px;
     outline: none;
