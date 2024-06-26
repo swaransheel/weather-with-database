@@ -4,7 +4,7 @@ body{
     -moz-osx-font-smoothing:grayscale;
 }
 .bg-color{
-    background-color: #444444;
+    background-color: #caa5a5;
 }
 .text-color{
     color: white;
@@ -60,7 +60,7 @@ body{
     padding: 10px;
     border: #444444 solid;
     padding-left: 30px;
-    color: #444444;
+    color: #a15d5d;
     height: 50%;
     width: 450px;
     outline: none;
